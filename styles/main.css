@@ -1,0 +1,49 @@
+@import url("./reset.css");
+@import url("./defaults.css");
+
+:root {
+  --black: #242426;
+  --white: #fff;
+  --primary: #f30031;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background:after {
+  position: absolute;
+  content: "";
+  left: 50vw;
+  top: -250vw;
+  width: 500vh;
+  height: 500vw;
+  transform: rotate(45deg);
+  transform-origin: -25% 50%;
+  background-color: var(--primary);
+}
+
+main {
+  z-index: 1;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row-reverse;
+}
