@@ -90,7 +90,7 @@ p + p {
 
 .side-content img + section,
 .side-content img + article {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
 
 .side-content p,
@@ -256,7 +256,11 @@ p + p {
   margin: 1rem 0;
 }
 
-.icon p {
+.icon p,
+.icon a,
+.icon .text {
+  color: var(--white);
+  opacity: 0.7;
   font-size: 0.6rem;
   line-height: 1rem;
   max-width: 10rem;
