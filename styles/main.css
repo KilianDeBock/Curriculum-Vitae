@@ -104,6 +104,33 @@ p + p {
   color: var(--white);
 }
 
+.side-content .listing {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.side-content .listing li {
+  opacity: .5;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.side-content .listing li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  width: 0.6rem;
+  aspect-ratio: 1/1;
+  background-color: var(--white);
+}
+
 .content {
   position: relative;
   flex-grow: 1;
