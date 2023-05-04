@@ -9,7 +9,7 @@ https://github.com/Stualyttle/LyttleTools/blob/main/CSS/reset.css
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* word-wrap: break-word; */
+  word-wrap: break-word;
 }
 
 body {
@@ -39,4 +39,8 @@ h5 {
 
 p {
   font-size: 1rem;
+}
+
+strong {
+  font-weight: 700;
 }
