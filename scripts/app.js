@@ -24,7 +24,10 @@
         const elements = document.querySelectorAll(`[data-i18n="${key}"]`);
         for (const element of elements) {
           if (element) {
-            element.innerText = this.language[key];
+            // I would suggest to use innerText instead of innerHTML
+            // But it depends on your use case and if you need to render HTML
+            // I don't use user content, so i use innerHTML!
+            element.innerHTML = this.language[key];
           }
         }
       }

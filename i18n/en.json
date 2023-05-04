@@ -21,6 +21,7 @@
   "skills": "Skills",
   "skills__typescript": "TypeScript",
   "skills__python": "Python",
-  "skills__ui-ux": "UI/UX",
-  "skills__cascading-style-sheets": "Cascading Style Sheets (CSS)"
+  "skills__ui": "User Design",
+  "skills__ux": "User Experience",
+  "skills__cascading-style-sheets": "Cascade Styling"
 }
