@@ -3,8 +3,8 @@
 
 :root {
   --black: #242426;
-  --white: #fff;
-  --primary: #f30031;
+  --white: #f8f8f9;
+  --primary: hsl(0, 95%, 64%);
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   min-width: 100vw;
+  overflow: hidden;
 }
 
 .background {
@@ -40,10 +41,85 @@ body {
 
 main {
   z-index: 1;
-  max-width: 60rem;
+  max-width: 49.6rem;
+  min-height: 70.15rem;
   width: 100%;
   margin: 0 auto;
   background-color: var(--white);
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.side-content {
+  background-color: var(--black);
+  color: var(--white);
+  max-width: 20rem;
+}
+
+.side-content .avatar {
+  object-fit: cover;
+  object-position: 50% 0;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.side-content section,
+.side-content article {
+  padding: 3.5rem;
+}
+
+.content {
+  flex-grow: 1;
+  position: relative;
+}
+
+.content:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 6.4rem;
+  background-color: var(--primary);
+  top: 0;
+  right: 0;
+}
+
+.content .first-name,
+.content .last-name,
+.content .job-title {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.content .first-name {
+  margin-top: 3rem;
+  font-weight: 100;
+}
+
+.content .last-name {
+  font-weight: 900;
+}
+
+.content .job-title {
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.content .job-title:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 0.5rem;
+  background-color: var(--primary);
+  bottom: -2rem;
+  right: 0;
 }
