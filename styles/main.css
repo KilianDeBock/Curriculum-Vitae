@@ -82,6 +82,7 @@ p + p {
     object-fit: cover;
     object-position: 50% 0;
     aspect-ratio: 1/1;
+    background-color: var(--primary);
 }
 
 .side-content section,
